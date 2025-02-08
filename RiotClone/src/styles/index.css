@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav{
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-evenly;
+    border-style: solid;
+    width: 100vw;
+    padding: 10px;
+    color: white;
+    background-color: rgb(28, 27, 27);
+}
+.video{
+    width: 100vw;
+    height: 70vh;
+    background-color: blue;
+}
+
+.games{
+    width: 100vw;
+    height: 170vh;
+}
+.esports{
+    width: 100vw;
+    height: 130vh;
+}
