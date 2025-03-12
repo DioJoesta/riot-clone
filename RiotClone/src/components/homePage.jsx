@@ -3,13 +3,13 @@ export function HomePage () {
         <div>
             <div className="video w-full h-[70vh]">
             <video className="w-full h-full object-cover"  autoPlay loop muted playsInline>
-                <source src="/rise video.mp4" type="video/mp4"/>
+                <source src="/rise-video.mp4" type="video/mp4"/>
             </video>
             </div>
 
             
             <div className="whats-new bg-slate-950 w-[100vw] h-[150vh] " >
-
+                        {/*intro text divs*/}
                     <div className="intro flex items-center justify-evenly w-full h-[200px]">
                         <div className="bg-none w-[500px] flex justify-center items-center h-28 text-center text-white
                         text-[45px] font-bold translate-x-[-300px]">
@@ -20,7 +20,7 @@ export function HomePage () {
                             SEE MORE
                         </button>
                     </div>
-
+                        {/*intro divs*/}
                 <div className="bigflex flex translate-x-[-15px] justify-evenly gap-5">
 
                     <div className="pic flex flex-col items-start">
@@ -88,6 +88,7 @@ export function HomePage () {
                 </div>
                 
             </div>
+            {/*games divs*/}
             <div className="games bg-slate-800 text-white
                         text-[45px] font-bold ">
                 <h2 className="p-10">Games</h2>
@@ -153,7 +154,7 @@ export function HomePage () {
                                     </div>
                                 </div>
                 </div>
-                
+                {/*esports divs*/}
             </div>
             <div className="esports bg-slate-400 text-white
                         text-[45px] font-bold">
@@ -212,12 +213,21 @@ export function HomePage () {
                 </div>
             </div>
 
-            <div className="w-100 bg-slate-600 h-32">
-                <div>
-
+                {/*before the footer nav*/}
+        
+            <div className="w-full bg-white h-[600px] flex justify-start">
+                <div className=" flex flex-col justify-center items-center gap-4 bg-white w-[790px] h-full relative z-10" style = {{clipPath: 'polygon(0% 0%, 100% 0%, 80% 100%, 0% 100% )'}}>
+                    <h3 className="text-[50px] justify-center items-center flex translate-y-[70px]">We're hiring!</h3>
+                    <h3 className="flex w-full whitespace-normal items-center h-[200px] text-[20px] justify-center">Team up  with Riot to forge your path and craft <br /> unforgettable experiences for players</h3>
+                    <div className="flex w-[600px] gap-5 translate-y-[-50px]  h-[150px] justify-center">
+                        <button className="bg-slate-300 rounded-2xl w-[250px] h-[150px]">132</button>
+                        <button className="bg-slate-300 rounded-2xl w-[250px] h-[150px]">Open positions</button>
+                    </div>
+                    <button className="bg-red-500 rounded-2xl translate-y-[-30px] w-[250px] h-[60px] text-white text-[20px] font-bold">Explore Careers</button>
                 </div>
-                <div>
-                    
+                {/*left pic divs*/}
+                <div className=" h-[599px]  z-0 w-[990px] translate-x-[550px] absolute ">
+                    <img className="h-full w-full" src="/pic2.jpg" alt="" />
                 </div>
             </div>
         </div>
