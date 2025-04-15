@@ -8,6 +8,7 @@ import "./styles/index.css"
 import { SignUp } from './components/signupPage'
 import { HomePage } from './components/homePage'
 import Game from './components/tictactoe'
+import { SideNav } from './components/sidenav'
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Router>
 
         <NavigationBar/>
+        <SideNav/>
+        
         
         <Routes>
           
@@ -30,6 +33,7 @@ function App() {
           <Route path='/tictactoe' element= {<Game/>}/>
         </Routes>
       </Router>
+      
     </>
   )
 }

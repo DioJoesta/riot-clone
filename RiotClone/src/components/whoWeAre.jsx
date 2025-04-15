@@ -50,8 +50,8 @@ export function WhoWeArePage (){
 
     return(
        <>
-            <div className="top-[90px] w-full min-h-[650px] overflow-hidden pt-[90px] justify-items-center">
-            <video autoPlay muted loop playsInline  className="w-full h-[650px] absolute top-0 left-0 object-cover">
+            <div className="w-full min-h-[650px] overflow-hidden justify-items-center">
+            <video autoPlay muted loop playsInline  className="w-full h-[650px] absolute  object-cover z-0">
                 <source src="/Who-We-Are-Riot-Games.mp4" />
             </video>
             <div className="absolute top-0 left-0 w-full h-[650] bg-black opacity-70 z-10"></div>

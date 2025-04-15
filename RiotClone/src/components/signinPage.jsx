@@ -6,26 +6,50 @@ export function SignInPage() {
     const [password, setPassword] = useState("");
     const [errors, setErrors] = useState([]);
 
-    const handleSubmit = e => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         
         let errorList = [];
-
+    
         if (!userName.trim()) {
             errorList.push("User name can't be empty");
         }
-
+    
         if (password.length < 6) {
             errorList.push("Password must be at least 6 characters");
         }
-
+    
         if (errorList.length > 0) {
             setErrors(errorList);
-        } else {
-            setErrors([]);
-            alert("You signed in successfully!");
+            return;
+        }
+    
+        setErrors([]);
+    
+        try {
+            const response = await fetch("http://localhost:5000/signin", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ username: userName, password }) // Assuming email == username
+            });
+    
+            const data = await response.json();
+    
+            if (!response.ok) {
+                throw new Error(data.error || "Sign-in failed");
+            }
+    
+            console.log("Server Response:", data);
+            alert("Signed in successfully!");
+    
+        } catch (error) {
+            console.error("Sign-in error:", error.message);
+            setErrors([error.message]);
         }
     };
+    
 
     return (
        <form onSubmit={handleSubmit}>

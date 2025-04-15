@@ -12,7 +12,7 @@ export function DropDown({ label, children }) {
       {/* Label or button to toggle dropdown */}
         <button
           onClick={handleDropDownToggle}
-          className="flex items-center gap-2 px-4 py-2 bg-slate-300 text-black rounded-2xl focus:outline-none"
+          className="flex items-center justify-center gap-2 px-4 py-2 min-w-[10px] bg-transparent text-black rounded-2xl focus:outline-none"
         >
           {label}
           {/* Arrow Icon */}
@@ -32,7 +32,7 @@ export function DropDown({ label, children }) {
 
       {/* Conditionally render dropdown content */}
       {isOpen && (
-        <div className="absolute left-0 mt-2 w-48 bg-white text-black border rounded-md shadow-lg hover:cursor-pointer">
+        <div className="absolute z-10 left-0 mt-2 w-48 bg-white text-black border rounded-md shadow-lg hover:cursor-pointer">
           {children}
         </div>
       )}

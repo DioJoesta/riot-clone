@@ -1,24 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    padding: 0%;
-    margin: 0%;
+
+* {
+  padding: 0;
+  margin: 0;
+ 
 }
 
-
-
-.video{
-    width: 100vw;
-    height: 70vh;
-    background-color: blue;
+html, body {
+  width: 100%;
+  min-height: 100vh; /* Set height to 100vh for the full viewport height */
+  margin: 0;
+  padding: 0; 
+  display: block;
+  overflow-x: hidden;
 }
 
-.games{
-    width: 100vw;
-    height: 170vh;
-}
-.esports{
-    width: 100vw;
-    height: 130vh;
+#root {
+  width: 100%; /* Ensure root div takes up full width */
+  min-height: 100vh; /* Ensure root div stretches to full height */
 }
