@@ -62,33 +62,36 @@ export function WhoWeArePage (){
             <p className="text-[20px]">{content.description}</p>
             </div>
             {/**buttons for quotes */}
-           <div className=" w-[1500px] h-[100px] relative mt-[109px] flex justify-evenly z-10">
-                <div className="flex  h-[50px] w-[200px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
-                <h3 className=" text-white ">01.</h3>
-                <button className="text-white text-[25px] hover:border-b-[3px] border-red-600 " onClick={handleClickPlayerFirst}>PLAYER FIRST</button>
-                </div>
-                <div className="flex  h-[50px] w-[310px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
-                <h3 className="text-white">02.</h3>
-                <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickSeriousAboutGames}>SERIOUS ABOUT GAMES</button>
-                </div>
-                <div className="flex  h-[50px] w-[280px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
-                <h3 className="text-white">03.</h3>
-                <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickDreamAndDeliver}>DREAM AND DELIVER</button>
-                </div>
-                <div className="flex  h-[50px] w-[320px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
-                <h3 className="text-white">04.</h3>
-                <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickInForTheLongTerm}>IN FOR THE LONG TERM</button>
-                </div>
-                <div className="flex  h-[50px] w-[200px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
-                <h3 className="text-white">05.</h3>
-                <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickOneRiot}>ONE RIOT</button>
+            <div className="w-full h-[100px] relative mt-[109px] flex overflow-x-auto whitespace-nowrap scrollbar-hide z-10">
+                <div className="flex min-w-max gap-6 px-4">
+                    <div className="flex h-[50px] w-[200px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
+                    <h3 className="text-white">01.</h3>
+                    <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickPlayerFirst}>PLAYER FIRST</button>
+                    </div>
+                    <div className="flex h-[50px] w-[310px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
+                    <h3 className="text-white">02.</h3>
+                    <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickSeriousAboutGames}>SERIOUS ABOUT GAMES</button>
+                    </div>
+                    <div className="flex h-[50px] w-[280px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
+                    <h3 className="text-white">03.</h3>
+                    <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickDreamAndDeliver}>DREAM AND DELIVER</button>
+                    </div>
+                    <div className="flex h-[50px] w-[320px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
+                    <h3 className="text-white">04.</h3>
+                    <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickInForTheLongTerm}>IN FOR THE LONG TERM</button>
+                    </div>
+                    <div className="flex h-[50px] w-[200px] gap-3 mt-[23px] transition-transform duration-300 hover:scale-110">
+                    <h3 className="text-white">05.</h3>
+                    <button className="text-white text-[25px] hover:border-b-[3px] border-red-600" onClick={handleClickOneRiot}>ONE RIOT</button>
+                    </div>
                 </div>
             </div>
+
 
             
        </div>
         {/**second quotes */}
-        <div className="w-full min-h-[350px] bg-gray-950 flex justify-center items-center gap-14 ">
+        <div className=" w-full min-h-[350px] bg-gray-950 flex justify-center items-center gap-14 overflow-x-auto ">
             <div className="w-[300px] min-h-[200px] flex flex-col items-start gap-2 ">
                 <h2 className="text-white text-[25px]">Hyper-serve the core</h2>
                 <p className="text-white">
@@ -114,69 +117,62 @@ export function WhoWeArePage (){
                 </p>
             </div>
         </div>
+
         {/**the who we are div with the big gif */}
-        <div className="bg-white w-full min-h-[550px] flex justify-center items-center gap-20">
-            <div className="max-w-[500px] min-h-[200px]">
+        <div className="bg-white lg:w-full md:w-full w-full min-h-[550px] flex lg:flex-row md:flex-row flex-col justify-center items-center gap-20">
+            <div className="pt-5 md:pl-5 max-w-[500px] min-h-[200px]">
                 <img src="/zelda.gif" alt="###" />
             </div>
-            <div className="max-w-[500px] min-h-[200px]">
+            <div className="p-5 max-w-[500px] min-h-[200px]">
                 <h2 className="font-bold text-[40px]">
                 WHO WE ARE
                 </h2>
-                <p>
+                <p >
                 Riot Games was founded in 2006 to develop, publish, and support the most player-focused games in the world. As we went from one game to many, we have expanded to over 4,500 Rioters across more than 20 offices around the world bringing a global perspective to the games we create and the characters in them. From the streets of Piltover to the Radianite labs of Alpha Earth, we are all about making games and serving the people who love them.
                 </p>
             </div>
         </div>
-            {/**accordions */}
-           <div className="min-w-[200px] min-h-[400px] flex sm:flex-col md:flex-row">
-                <div   className={`min-w-[380px] md:min-h-[400px] flex md:flex-col hover:border-[3px] border-red-600 sm:flex-row  min-h-[200px] w-full
-                    `}>
-                        <div className="min-w-[200px] min-h-[300px] relative w-full ">
-                            <img className="object-cover absolute w-full h-full" src="/valorant-pic-01.png" alt="###" />
+        
+            {/**pseudo accordions */}
+           <div className="bg-[url('/background-01.jpg')] bg-cover bg-center  border-[2px] flex lg:flex-row md:flex-row flex-col border-green-400 lg:w-full md:w-full w-full lg:h-[760px] h-[960px] justify-around items-center">
+            {/* accord1 */}
+                <div className="flex md:flex-col lg:w-[400px] md:w-[300px] lg:h-[745px] md:h-[745px] w-[419px] h-[250px]  hover:ring hover:ring-blue-500">
+                        <div className="bg-[url('/valorant-pic-01.png')] bg-cover bg-center lg:w-[400px] md:w-[300px] w-[300px] lg:h-[450px] md:h-[450px] h-[250px]">
+                            
                         </div>
-                        <div className="bg-black flex justify-center items-center w-full">
-                            <img src="/val-icon.png" alt="###" />
+                        <div className="bg-black flex justify-center lg:h-[300px] md:w-[300px] lg:w-[400px] items-center  pb-3">
+                            <img className="w-[300px] lg:h-[200px] md:w-[200px] lg:w-[200px]" src="/val-icon.png" alt="###" />
                         </div>
-                        <div className="bg-black  flex justify-center items-center w-full">
-                           <img src="/valorant-logotype.png" alt="###" />
-                        </div>
-                </div>
-                <div   className={`min-w-[380px] md:min-h-[400px] flex hover:border-[3px] border-red-600 md:flex-col sm:flex-row  min-h-[200px] w-full
-                   `}>
-                        <div className="min-w-[200px] min-h-[300px] relative ">
-                            <img className="object-cover absolute w-full h-full" src="/valorant-pic-02.jpg" alt="###" />
-                        </div>
-                        <div className="bg-black flex justify-center items-center w-full">
-                            <img src="/val-icon.png" alt="###" />
-                        </div>
-                        <div className="bg-black  flex justify-center items-center w-full">
-                           <img src="/valorant-logotype.png" alt="###" />
+                        <div className="bg-black flex justify-center items-center w-[300px] md:w-[300px] lg:w-[400px] pb-5">
+                           <img className="" src="/valorant-logotype.png" alt="###" />
                         </div>
                 </div>
-                <div   className={`min-w-[380px] md:min-h-[400px] flex md:flex-col sm:flex-row  hover:border-[3px] border-red-600 min-h-[200px] w-full
-                    `}>
-                        <div className="min-w-[200px] min-h-[300px] relative  ">
-                            <img className="object-cover absolute w-full h-full" src="/valorant-pic-03.jpg" alt="###" />
+                {/* accord2 */}
+                <div className="flex md:flex-col lg:w-[400px] md:w-[300px] lg:h-[745px] md:h-[745px] w-[419px] h-[250px]  hover:ring hover:ring-blue-500">
+                        <div className="bg-[url('/valorant-pic-02.jpg')] bg-cover bg-center lg:w-[400px] md:w-[300px] w-[300px] lg:h-[450px] md:h-[450px] h-[250px]">
+                            
                         </div>
-                        <div className="bg-black flex justify-center items-center w-full">
-                            <img src="/val-icon.png" alt="###" />
+                        <div className="bg-black flex justify-center lg:h-[300px] md:w-[300px] lg:w-[400px] items-center  pb-3">
+                            <img className="w-[300px] lg:h-[200px] md:w-[200px] lg:w-[200px]" src="/val-icon.png" alt="###" />
                         </div>
-                        <div className="bg-black  flex justify-center items-center w-full">
-                           <img src="/valorant-logotype.png" alt="###" />
-                        </div>
-                </div>
-                <div   className={`min-w-[380px] md:min-h-[400px] flex md:flex-col sm:flex-row hover:border-[3px] border-red-600 min-h-[200px] w-full`}>
-                        <div className="min-w-[200px] min-h-[300px] relative  w-full ">
-                            <img className="object-cover absolute w-full h-full" src="/valorant-pic-04.jpg" alt="###" />
-                        </div>
-                        <div className="bg-black flex justify-center items-center w-full">
-                            <img src="/val-icon.png" alt="###" />
-                        </div>
-                        <div className="bg-black flex justify-center items-center w-full">
-                           <img src="/valorant-logotype.png" alt="###" />
+                        <div className="bg-black flex justify-center items-center w-[300px] md:w-[300px] lg:w-[400px] pb-5">
+                           <img className="" src="/valorant-logotype.png" alt="###" />
                         </div>
                 </div>
+                    {/* accord3 */}
+                    <div className="flex md:flex-col lg:w-[400px] md:w-[300px] lg:h-[745px] md:h-[745px] w-[419px] h-[250px]  hover:ring hover:ring-blue-500">
+                        <div className="bg-[url('/valorant-pic-03.jpg')] bg-cover bg-center lg:w-[400px] md:w-[300px] w-[300px] lg:h-[450px] md:h-[450px] h-[250px]">
+                            
+                        </div>
+                        <div className="bg-black flex justify-center lg:h-[300px] md:w-[300px] lg:w-[400px] items-center  pb-3">
+                            <img className="w-[300px] lg:h-[200px] md:w-[200px] lg:w-[200px]" src="/val-icon.png" alt="###" />
+                        </div>
+                        <div className="bg-black flex justify-center items-center w-[300px] md:w-[300px] lg:w-[400px] pb-5">
+                           <img className="" src="/valorant-logotype.png" alt="###" />
+                        </div>
+                </div>
+              
+               
                    
            </div>
            

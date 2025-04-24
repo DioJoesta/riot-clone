@@ -26,23 +26,28 @@ export default function TableWithFilter() {
     });
 
     return (
-        <div className="p-4">
+        <div className="flex lg:flex-col md:flex-col flex-col justify-center items-center lg:w-full md:w-full w-full h-[500px]">
             {/* Filter Section */}
-            <div className="flex justify-center gap-4 mb-4">
+            <div className="flex lg:flex-row md:flex-row items-center md:w-full lg:w-full w-full h-[100px] justify-center gap-2 mb-4">
+                <div className=" lg:w-[300px] md:w-[300px]">
                 <input
-                    className="rounded-3xl w-[600px] p-2 pl-[20px] pr-[20px] border"
+                    className="rounded-3xl lg:w-[300px] md:w-[300px] w-[100px] p-2 pl-[20px] pr-[20px] border"
                     type="search"
                     placeholder="Search Job Titles"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
-
+                </div>
+                
+                
                 <DropDown label="Select a craft" onChange={setCraft}>
                     <div onClick={() => setCraft("Art")}>Art</div>
                     <div onClick={() => setCraft("Engineering")}>Engineering</div>
                     <div onClick={() => setCraft("Design")}>Design</div>
                     <div onClick={() => setCraft("Management")}>Management</div>
                 </DropDown>
+                
+                
 
                 <DropDown label="Select a Product Team" onChange={setProductTeam}>
                     <div onClick={() => setProductTeam("Design")}>Design</div>
