@@ -12,11 +12,11 @@ export function DropDown({ label, children }) {
       {/* Label or button to toggle dropdown */}
         <button
           onClick={handleDropDownToggle}
-          className="flex items-center justify-center gap-2 px-4 py-2 min-w-[10px] bg-transparent text-black rounded-2xl focus:outline-none"
+          className="flex  items-center justify-center min-w-[10px] p-0 m-0 bg-transparent text-black "
         >
           {label}
           {/* Arrow Icon */}
-          <svg
+          {/* <svg
             className={`w-4 h-4 transition-transform duration-300 ${
               isOpen ? "rotate-180" : "rotate-0"
             }`}
@@ -26,7 +26,7 @@ export function DropDown({ label, children }) {
             stroke="currentColor"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-          </svg>
+          </svg> */}
         </button>
 
 

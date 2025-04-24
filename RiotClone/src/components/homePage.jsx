@@ -235,7 +235,7 @@ export function HomePage () {
                         <h2 className="lg:text-[48px] md:text-[48px] text-[28px] font-bold flex justify-center items-center">We're hiring!</h2>
                         <p className="lg:text-[20px] md:text-[20px] text-[20px] lg:w-[400px] md:w-[400px] w-[300px] text-slate-400 flex justify-center items-center">Team up with Riot to forge your path and craft unforgettable experiences for players</p>
                         {/* work links */}
-                        <div className="flex gap-[20px] translate-x-[-20px] lg:translate-x-0 md:translate-x-0 lg:justify-center md:justify-center justify-center lg:items-center md:items-center items-center ">
+                        <div className="flex gap-[20px] translate-x-[-25px] lg:translate-x-0 md:translate-x-0 lg:justify-center md:justify-center justify-center lg:items-center md:items-center items-center ">
                             {/* left */}
                             <a href="" className="rounded-[10px] text-slate-400 lg:w-[180px] md:w-[180px] w-[180px] lg:h-[180px] md:h-[180px] h-[180px] text-[26px] flex flex-col justify-center items-center text-center bg-slate-200 p-3"><span className="text-black lg:text-[56px] md:text-[56px] text-[56px]">136</span> open positions</a>
                             {/* right */}
