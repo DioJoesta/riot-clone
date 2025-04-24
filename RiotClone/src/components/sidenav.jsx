@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function SideNav({ isOpen, closeSidenav }) {
   return (
@@ -8,26 +9,27 @@ export function SideNav({ isOpen, closeSidenav }) {
       {/* Close button */}
       <button
         className="absolute top-4 right-4 text-white text-2xl"
-        onClick={closeSidenav} // Close the sidenav when clicked
+        onClick={closeSidenav}
       >
         ✖
       </button>
 
       {/* Logo */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 mb-5">
         <img className="w-[25px] rounded-3xl" src="Riot-Icon.jpeg" alt="riot fist" />
       </div>
 
       {/* Links */}
-      <ul className="mt-5 space-y-4">
-        <li className="hover:text-red-500 cursor-pointer">Link 1</li>
-        <li className="hover:text-red-500 cursor-pointer">Link 2</li>
-        <li className="hover:text-red-500 cursor-pointer">Link 3</li>
-      </ul>
+      <Link to="/who-we-are" className="flex text-[13px] font-bold mb-2">WHO WE ARE</Link>
+      <Link to="/work-with-us" className="flex text-[13px] font-bold mb-5">WORK WITH US</Link>
 
       {/* Search */}
       <div className="mt-5">
-        <input type="search" className="w-full p-2 rounded bg-gray-800 text-white" placeholder="Search..." />
+        <input
+          type="search"
+          className="w-full p-2 rounded bg-gray-800 text-white"
+          placeholder="Search..."
+        />
       </div>
 
       {/* Sign-in button */}
